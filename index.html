@@ -22,6 +22,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -29,17 +30,19 @@
  	<div class="container">
  		<div class="row">
  			<div class="col-lg-7">
- 				<img class="header-img" src="img/I-mac.png" alt="Монитор">
+ 				<img class="header-img animated fadeInLeftBig" src="img/I-mac.png" alt="Монитор">
  			</div>
  			<!-- /.col-7 -->
  			<div class="col-lg-5">
- 				<p class="header-pretitle">Веб-разработчик</p>
- 				<h1 class="header-title">Сафин Руслан</h1>
- 				<p class="header-subtitle">Верстка на HTML/CSS <br>
+ 				<div class="animated fadeInRightBig">
+ 					<p class="header-pretitle">Веб-разработчик</p>
+ 					<h1 class="header-title">Сафин Руслан</h1>
+ 					<p class="header-subtitle">Верстка на HTML/CSS <br>
 					Разработка сайтов под ключ</p>
-				<div class="header-button-block">
-					<button class="header-button">Связаться</button>
-					<small>*Это бесплатно</small>
+					<div class="header-button-block">
+						<a href="https://vk.me/king_for_you" target="_blanc" class="header-button">Связаться</a>
+						<small>*Это бесплатно</small>
+ 					</div>
 				</div>
  			</div>
  			<!-- /.col-5 -->
@@ -51,7 +54,7 @@
 
 <section class="portfolio">
 	<div class="container">
-		<div class="portfolio-block">
+		<div class="portfolio-block animated fadeInUpBig">
 			<h2 class="portfolio-title">Портфолио</h2>
 			<p class="portfolio-subtitle">Мои работы</p>
 			<div class="row">
@@ -92,8 +95,11 @@
 				<div class="social">
 					<p class="social-text">Подпишитесь:</p>
 					<a href="#"><img src="img/social/fb.png" alt="Facebook"></a>
+
 					<a href="#"><img src="img/social/tg.png" alt="Telegramm"></a>
-					<a href="#"><img src="img/social/vk.png" alt="VK"></a>
+
+					<a href="https://vk.com/king_for_you" target="_blanc" ><img src="img/social/vk.png" alt="VK"></a>
+
 					<a href="#"><img src="img/social/yt.png" alt="YouTube"></a>
 				</div>
 			</div>
@@ -101,7 +107,7 @@
 			<div class="col-md-4">
 				<div class="sta">
 					<p class="text-sta">Напишите мне:</p>
-					<button>Написать</button>
+					<a class="footer-button" href="https://vk.me/king_for_you" target="_blanc">Написать</a>
 				</div>
 			</div>
 			<!-- /.col-4 -->
@@ -112,4 +118,5 @@
 </footer>
 
 </body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>

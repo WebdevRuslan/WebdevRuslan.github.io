@@ -27,6 +27,8 @@ header {
 	margin-top: 20px;
 }
 .header-button {
+	display: inline-block;
+	text-decoration: none;
 	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
 	border-radius: 25px;
 	background-color: #ffffff;
@@ -35,6 +37,10 @@ header {
 	font-weight: 700;
 	font-size: 18px;
 	margin-top: 33px;
+	transition: 0.4s;
+}
+.header-button:hover {
+	box-shadow: none;
 }
 header small {
 	font-size: 12px;
@@ -131,7 +137,9 @@ footer {
 	font-weight: 400;
 	margin-bottom: 13px;
 }
-footer button {
+.footer-button {
+	display: inline-block;
+	text-decoration: none;
 	color: #deedfe;
 	background-color: #3a7dfd;
 	font-size: 18px;
@@ -139,7 +147,12 @@ footer button {
 	border-radius: 50px;
 	border: 1px solid #ffffff;
 	display: inline-block;
-	padding: 17px 42px
+	padding: 17px 42px;
+	transition: 0.4s;
+}
+.footer-button:hover {
+	background-color: #fff;
+	color: #3a7dfd 
 }
 .social {
 	text-align: center;
@@ -178,7 +191,7 @@ footer button {
 	.social img {
 		width: 30px;
 	}
-	footer button {
+	.footer-button {
 		font-size: 14px;
 		padding: 8px 35px;
 	}
