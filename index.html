@@ -11,7 +11,7 @@
 		<meta name="auyhor" content="Руслан Сафин">
 
 		<!-- Иконка, которая будет на вкладке в браузере -->
-		<link rel="icon" href="favicon.png">
+		<link rel="icon" href="img/favicon.png">
 
 		<!-- Шрифты от Google -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -30,20 +30,18 @@
  	<div class="container">
  		<div class="row">
  			<div class="col-lg-7">
- 				<img class="header-img animated fadeInLeftBig" src="img/I-mac.png" alt="Монитор">
+ 				<img class="header-img wow fadeInLeftBig" src="img/I-mac.png" alt="Монитор">
  			</div>
  			<!-- /.col-7 -->
  			<div class="col-lg-5">
- 				<div class="animated fadeInRightBig">
- 					<p class="header-pretitle">Веб-разработчик</p>
- 					<h1 class="header-title">Сафин Руслан</h1>
- 					<p class="header-subtitle">Верстка на HTML/CSS <br>
+ 					<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+ 					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Сафин Руслан</h1>
+ 					<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br>
 					Разработка сайтов под ключ</p>
-					<div class="header-button-block">
+					<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
 						<a href="https://vk.me/king_for_you" target="_blanc" class="header-button">Связаться</a>
 						<small>*Это бесплатно</small>
- 					</div>
-				</div>
+ 					</div>	
  			</div>
  			<!-- /.col-5 -->
  		</div>
@@ -54,7 +52,7 @@
 
 <section class="portfolio">
 	<div class="container">
-		<div class="portfolio-block animated fadeInUpBig">
+		<div class="portfolio-block wow  fadeIn">
 			<h2 class="portfolio-title">Портфолио</h2>
 			<p class="portfolio-subtitle">Мои работы</p>
 			<div class="row">
@@ -94,13 +92,13 @@
 			<div class="col-md-4">
 				<div class="social">
 					<p class="social-text">Подпишитесь:</p>
-					<a href="#"><img src="img/social/fb.png" alt="Facebook"></a>
+					<a class=" wow bounceInDown" data-wow-delay="0.1s" href="#"><img src="img/social/fb.png" alt="Facebook"></a>
 
-					<a href="#"><img src="img/social/tg.png" alt="Telegramm"></a>
+					<a class=" wow bounceInDown" data-wow-delay="0.2s" href="#"><img src="img/social/tg.png" alt="Telegramm"></a>
 
-					<a href="https://vk.com/king_for_you" target="_blanc" ><img src="img/social/vk.png" alt="VK"></a>
+					<a class="wow bounceInDown" data-wow-delay="0.3s" href="https://vk.com/king_for_you"  target = "_blanc"><img src="img/social/vk.png" alt="VK"></a>
 
-					<a href="#"><img src="img/social/yt.png" alt="YouTube"></a>
+					<a class=" wow bounceInDown" data-wow-delay="0.4s" href="#"><img src="img/social/yt.png" alt="YouTube"></a>
 				</div>
 			</div>
 			<!-- /.col-4 -->
@@ -119,4 +117,8 @@
 
 </body>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 </html>
